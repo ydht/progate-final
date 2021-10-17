@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kost Putri Viera Depok</title>
+        <link rel="shortcut icon" href="logo-kost.png">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div class="header-left">
+                <a href="index.html"><img src="./images/logo-kost.png" width="100" height="100"></a>
+            </div>
+            <ul class="header-right">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html" class="active">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </div>
+            </ul>
+        </nav>
+        <main>
+            <h1>Gallery</h1>
+            <div class="main-gallery">
+                <div class="gallery">
+                    <div class="frame">
+                        <img src="./images/foto-desain.jpg" onclick="enlargeImg(this);" alt="Desain Kost" style="width:100%">
+                    </div>
+                    <div class="frame">
+                        <img src="./images/foto-kost.jpg" onclick="enlargeImg(this);" alt="Tampak Luar" style="width:100%">
+                    </div>
+                    <div class="frame">
+                        <img src="./images/foto-kamar.jpg" onclick="enlargeImg(this);" alt="Foto Kamar" style="width:100%">
+                    </div>
+                    <div class="frame">
+                        <img src="./images/foto-lorong.jpg" onclick="enlargeImg(this);" alt="Dapur dan Lorong" style="width:100%">
+                    </div>
+                    <div class="frame">
+                        <img src="./images/foto-parkir.jpg" onclick="enlargeImg(this);" alt="Fasilitas Parkir" style="width:100%">
+                    </div>
+                </div>
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+                <script>
+                    function enlargeImg(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                    }
+                </script>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <p>Made by Yodhita Maureen Romindo for Progate Advanced Frontend Bootcamp Level 1 - Final Project</p>
+    </footer>
+</html>

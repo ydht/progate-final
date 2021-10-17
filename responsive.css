@@ -1,0 +1,166 @@
+/* For Tablets */
+@media all and (max-width: 1000px) {
+    main {
+        display: block;
+        text-align: center;
+        height: 100%;
+    }
+    
+    main h1 {
+        width: 100%;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .main-left {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main-right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main-wrapper p {
+        font-size: 30px;
+    }
+
+    .main-left {
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .about-list {
+        text-align: left;
+    }
+
+    .main-right img {
+        padding: 0;
+        margin-left: -50px;
+        width: 400px;
+        height: 300px;
+        margin-top: 0;
+    }
+
+    .main-right {
+        margin-top: 30px;
+    }
+
+
+    .gallery {
+        width: auto;
+    }
+
+    .frame {
+        width: 180px;
+        height: 150px;
+        border: 3px solid #ccc;
+        background: #f4f4f4;
+        border-style: none;
+        margin: 10px;
+        padding: 15px 10px;
+        display: inline-block;
+    }
+
+    .container {
+        width: 400px;
+        margin: 50px auto;
+    }
+
+    form {
+        width: 60%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .socmed p {
+        text-align: center;
+    }
+
+    .socmed img {
+        height: 20px;
+        width: 20px;
+        padding: 0;
+        margin: 0 10px;
+        float: left;
+    }
+
+}
+
+@media all and (max-width: 900px) {
+    button {
+        font-size: 12px;
+    }
+}
+
+/* For Smartphones */
+@media all and (max-width: 670px) {
+    .menu { 
+        display: none;
+        position: absolute;
+        background-color:white;
+        right: 0;
+        top: 0;
+        text-align: left;
+        padding: 10px;
+        width: 20%;
+    }
+
+    .menu li + li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        right: 20%;
+        top: 70px;
+        transform: translateX(35%);
+        z-index: 2;
+    }
+
+
+    iframe {
+        width: 300px;
+        height: 300px;
+        margin: 0;
+        padding: 5px;
+        }
+
+    .main-wrapper h2 {
+        font-size: 50px;
+    }
+
+    .main-wrapper p {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 300px;
+        margin: 50px auto;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .mid-wrapper h1 {
+        font-size: 70px;
+    }
+
+    .mid-wrapper h3 {
+        font-size: 24px;
+    }
+
+    .mid-wrapper p {
+        font-size: 15px;
+    }
+
+}
