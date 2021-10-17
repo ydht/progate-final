@@ -131,8 +131,7 @@
     }
 
     .main-right img {
-        width: 450px;
-        height: 270px;
+        padding: 10px;
     }
 
     iframe {
@@ -156,7 +155,7 @@
     }
 
     form {
-        width: 80%;
+        width: 90%;
     }
 
     .mid-wrapper h1 {
@@ -170,5 +169,4 @@
     .mid-wrapper p {
         font-size: 15px;
     }
-
 }
