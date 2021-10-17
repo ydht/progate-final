@@ -131,7 +131,8 @@
     }
 
     .main-right img {
-        width: 80%;
+        width: 450px;
+        height: 270px;
     }
 
     iframe {
